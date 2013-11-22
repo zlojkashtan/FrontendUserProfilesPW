@@ -299,6 +299,7 @@ class FrontendUserProfile extends WireData implements Module {
                     $u->gender = $gender;
                     $u->addRole("guest");
                     $u->addRole("registered");
+                    $u->language = 'russian';
                     $u->save();
 
                     if ($this->session) {
